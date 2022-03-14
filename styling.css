@@ -55,7 +55,22 @@ video {
     flex-direction: column;
 }
 
+.text {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    background-color: black;
+    border: 3px groove azure;
+   
+  padding: 10px;
+    border-radius: 8px;
+}
 
+h2 {
+   
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
 
 
 
