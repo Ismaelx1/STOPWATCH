@@ -1,15 +1,10 @@
 body {
-    
     padding: 0;
-
     background-size: cover;
     display: flex;
     justify-content: center;
     background-color: black;
-    
 }
-
-
 h1 {
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
@@ -22,22 +17,17 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-  margin-top: 100px;
-
+   margin-top: 100px;
     background-image: url(/istockphoto-698740028-170667a.jpg);
     background-size: cover;
     color: azure;
     width: 500px;
-height: 250px;
-border-radius: 8px;
-gap: 20px;
-z-index: 10;
-border: 3px groove azure;
-
-  
+    height: 250px;
+    border-radius: 8px;
+    gap: 20px;
+    z-index: 10;
+    border: 3px groove azure;
 }
-
-
 button {
     border: 1px solid azure;
     color: azure;
@@ -49,15 +39,11 @@ button {
     font-style: oblique;
     font-weight: bolder;
     margin-right: 5px;
-    
-
 }
-
 button:hover {
     background-color: azure;
     color: black;
 }
-
 video {
     height: 600px;
     width: 600px;

@@ -24,8 +24,8 @@ window.onload = function () {
        clearInterval(Interval);
       tens = "00";
         seconds = "00";
-      appendTens.innerHTML = tens;
-        appendSeconds.innerHTML = seconds;
+           appendTens.innerHTML = tens;
+             appendSeconds.innerHTML = seconds;
     }
     
      
@@ -43,18 +43,14 @@ window.onload = function () {
       } 
       
       if (tens > 99) {
-        console.log("seconds");
         seconds++;
-        appendSeconds.innerHTML = "0" + seconds;
-        tens = 0;
-        appendTens.innerHTML = "0" + 0;
+            appendSeconds.innerHTML = "0" + seconds;
+              tens = 0;
+               appendTens.innerHTML = "0" + 0;
       }
       
       if (seconds > 9){
         appendSeconds.innerHTML = seconds;
       }
-    
     }
-    
-  
   }
