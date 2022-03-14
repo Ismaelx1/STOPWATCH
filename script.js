@@ -1,22 +1,33 @@
+
+  let randomColor = Math.floor(Math.random()*16777215).toString(16);
+  const title = document.getElementById('title')
+  const buttonStart = document.getElementById('button-start');
+  const buttonStop = document.getElementById('button-stop');
 window.onload = function () {
   
-    var seconds = 00; 
-    var tens = 00; 
-    var appendTens = document.getElementById("tens")
-    var appendSeconds = document.getElementById("seconds")
-    var buttonStart = document.getElementById('button-start');
-    var buttonStop = document.getElementById('button-stop');
-    var buttonReset = document.getElementById('button-reset');
-    var Interval ;
+  const appendTens = document.getElementById("tens")
+  const appendSeconds = document.getElementById("seconds")
+
+  const buttonReset = document.getElementById('button-reset');
+
+
+
+
+    let Interval ;
+    let seconds = 00; 
+    let tens = 00; 
   
     buttonStart.onclick = function() {
       
       clearInterval(Interval);
        Interval = setInterval(startTimer, 10);
+    
     }
     
       buttonStop.onclick = function() {
          clearInterval(Interval);
+         clearInterval(momo);
+     
     }
     
   
@@ -35,10 +46,14 @@ window.onload = function () {
       
       if(tens <= 9){
         appendTens.innerHTML = "0" + tens;
+       
+        
       }
       
       if (tens > 9){
         appendTens.innerHTML = tens;
+      
+        
         
       } 
       
@@ -46,11 +61,24 @@ window.onload = function () {
         seconds++;
             appendSeconds.innerHTML = "0" + seconds;
               tens = 0;
-               appendTens.innerHTML = "0" + 0;
+               appendTens.innerHTML = "0" + 0;    
       }
       
       if (seconds > 9){
-        appendSeconds.innerHTML = seconds;
+          appendSeconds.innerHTML = seconds;
       }
+    };
     }
-  }
+  
+  
+    let momo = setInterval(
+      function () {
+        var randomColor = Math.floor(Math.random()*16777215).toString(16);
+        document.body.style.backgroundColor = "#"+randomColor;
+        title.style.color = "#"+randomColor;
+        
+   return momo
+      },1000);
+
+
+    
